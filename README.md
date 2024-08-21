@@ -66,12 +66,12 @@ kitti
 ├── kitti_infos_val.pkl
 ```
 ## Pre-training Model Download
-
+未完待续
 
 ## Model Training
-
+未完待续
 ## Model Testing
-
+未完待续
 ## Citation
 
 If you find this project useful in your research, please consider citing:
