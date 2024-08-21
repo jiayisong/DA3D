@@ -31,14 +31,40 @@ mim install -v -e .
 # "-e" 表示在可编辑模式下安装项目，因此对代码所做的任何本地修改都会生效，从而无需重新安装。
 ```
 ## Dataset Download
+1. Image files
 Download images from the [kitti](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d), including 
 *Download left color images of object data set (12 GB)*
 and
 *Download right color images, if you want to use stereo information (12 GB)*.
-
-The labeled files need to be converted, and for convenience I uploaded the converted files directly.
-
-
+2. label files
+The labeled files need to be converted, and for convenience I uploaded the converted files directly. They are [kitti_infos_test.pkl](https://drive.google.com/file/d/1WKZzsdcAjg9EVeLXLa5wAMbsZ4pxCRQU/view?usp=sharing), [kitti_infos_train.pkl](https://drive.google.com/file/d/1XzCNDc4CTuxtR2OfcdamnZTUaIWbtubs/view?usp=sharing), [kitti_infos_trainval.pkl](https://drive.google.com/file/d/1YkTG-_hG1T_eH5R43iVQrUYKw2-CU2Sc/view?usp=sharing), [kitti_infos_val.pkl](https://drive.google.com/file/d/1vbMq9bXo5w6B-ynoznIFGsU-vVhZUhRK/view?usp=sharing).
+3. Unzip
+Unzip the image file and organize it and the label file as follows.
+```
+kitti
+├── testing
+│   ├── image_2
+|   |   ├──000000.png
+|   |   ├──000001.png
+|   |   ├──''''
+│   ├── image_3
+|   |   ├──000000.png
+|   |   ├──000001.png
+|   |   ├──''''
+├── training
+│   ├── image_2
+|   |   ├──000000.png
+|   |   ├──000001.png
+|   |   ├──''''
+│   ├── image_3
+|   |   ├──000000.png
+|   |   ├──000001.png
+|   |   ├──''''
+├── kitti_infos_test.pkl
+├── kitti_infos_train.pkl
+├── kitti_infos_trainval.pkl
+├── kitti_infos_val.pkl
+```
 ## Pre-training Model Download
 
 
