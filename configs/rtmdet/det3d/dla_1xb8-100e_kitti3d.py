@@ -3,7 +3,7 @@ _base_ = './rtmdet-3d_base_dla.py'
 checkpoint = './model_weight/dla34-ba72cf86-base_layer_channel-4.pth'
 
 # ========================modified parameters======================
-work_dir = '/usr/jys/mmyolo/work_dirs/TableVI_test_20.47/'
+work_dir = './work_dirs/TableVI_test_20.47/'
 # =======================Unmodified in most cases==================
 
 relative_depth = True
