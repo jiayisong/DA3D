@@ -32,11 +32,19 @@ mim install -v -e .
 ```
 ## Dataset Download
 Download images from the [kitti](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d), including 
-<font color="green">Download left color images of object data set (12 GB)</font> 
+*Download left color images of object data set (12 GB)*
 and
-<font color="green">Download right color images, if you want to use stereo information (12 GB)</font> 
+*Download right color images, if you want to use stereo information (12 GB)*.
 
 The labeled files need to be converted, and for convenience I uploaded the converted files directly.
+
+
+## Pre-training Model Download
+
+
+## Model Training
+
+## Model Testing
 
 ## Citation
 
