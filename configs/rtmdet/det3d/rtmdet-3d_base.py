@@ -21,9 +21,7 @@ loss_bbox_weight = 10.0
 img_scale = (384, 1280)  # height  width
 # Dataset type, this will be used to define the dataset
 dataset_type = 'YOLOv5KittiDataset'
-data_root = '/home/jys/DataSets/kitti/'
-# data_root = '/mnt/DataSets/kitti'
-# data_root = '/dataset/kitti/object_detection/'
+data_root = './DataSets/kitti/'
 # -----model related-----
 deepen_factor = 0.33
 widen_factor = 0.5
