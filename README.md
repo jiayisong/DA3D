@@ -5,6 +5,7 @@ Code implementation of my paper [DA3D](https://ieeexplore.ieee.org/abstract/docu
 ### Create a new conda environment
 ```shell
 conda create -n DA3D python=3.7
+conda activate DA3D
 ```
 ### Install the [pytorch](https://pytorch.org/get-started/previous-versions/)
 ```shell
