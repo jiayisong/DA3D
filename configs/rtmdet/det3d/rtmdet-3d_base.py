@@ -4,7 +4,6 @@ _base_ = '../../_base_/default_runtime.py'
 
 # ========================Frequently modified parameters======================
 
-work_dir = '/mnt/jys/mmyolo/work_dirs/large_1/'
 
 class_names = ['Pedestrian', 'Cyclist', 'Car']
 input_modality = dict(use_lidar=False, use_camera=True)
