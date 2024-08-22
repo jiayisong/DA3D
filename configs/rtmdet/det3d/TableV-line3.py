@@ -2,7 +2,7 @@ _base_ = './rtmdet-3d_base_newloss.py'
 
 checkpoint = 'https://download.openmmlab.com/mmdetection/v3.0/rtmdet/cspnext_rsb_pretrain/cspnext-s_imagenet_600e.pth'
 
-work_dir = './work_dirs/TableV_line1/'
+work_dir = './work_dirs/TableV_line3/'
 
 
 relative_depth = False
