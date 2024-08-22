@@ -78,7 +78,13 @@ DA3D
 ├── ...
 ```
 ## Model Training
-未完待续
+Similar to mmyolo, train with the following command.
+```shell
+# Single gpu
+CUDA_VISIBLE_DEVICES=0 python tools/train.py configs/rtmdet/TabelV_line1.py
+# Multi gpu
+CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 ./tools/dist_train.sh configs/rtmdet/TabelV_line1.py 4
+```
 ## Model Testing
 未完待续
 ## Citation
