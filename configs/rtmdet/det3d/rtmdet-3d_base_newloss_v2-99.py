@@ -3,6 +3,11 @@ _base_ = 'rtmdet-3d_base_dla.py'
 base_lr = 0.00002
 max_epochs = 60
 
+# The model is too large and requires dual GPU training, so the batch size is 4.
+train_dataloader = dict(
+    batch_size=4,
+    num_workers=2, )
+
 # ===============================Unmodified in most cases====================
 model = dict(
     backbone=dict(
@@ -53,6 +58,4 @@ train_cfg = dict(
     # dynamic_intervals=[(max_epochs - 10, 1), ],
 )
 
-train_dataloader = dict(
-    batch_size=4,
-    num_workers=2, )
+
