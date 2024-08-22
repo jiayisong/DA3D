@@ -152,5 +152,5 @@ custom_hooks = [
 ]
 
 test_evaluator = dict(
-    submission_prefix=work_dir + 'result2/',
+    submission_prefix=work_dir + 'result/',
 )
