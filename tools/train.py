@@ -16,10 +16,7 @@ from mmyolo.utils import is_metainfo_lower
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a detector')
-    parser.add_argument('--config', help='train config file path',
-                        default='configs/rtmdet/det3d/rtmdet-3d_s_1xb8-100e_nus.py'
-                       # default='configs/rtmdet/det3d/rtmdet-3d_s_1xb8-100e_kitti3d.py'
-                        )
+    parser.add_argument('config', help='train config file path',)
     parser.add_argument('--work-dir', help='the dir to save logs and models')
     parser.add_argument(
         '--amp',
