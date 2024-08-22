@@ -151,7 +151,7 @@ train_dataloader = dict(
     dataset=dict(
         type=dataset_type,
         data_root=data_root,
-        ann_file='new/kitti_infos_train.pkl',
+        ann_file='kitti_infos_train.pkl',
         data_prefix=dict(img='training/image_2'),
         pipeline=[],
         modality=input_modality,
@@ -172,7 +172,7 @@ val_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         data_prefix=dict(img='training/image_2'),
-        ann_file='new/kitti_infos_val.pkl',
+        ann_file='kitti_infos_val.pkl',
         pipeline=[],
         modality=input_modality,
         load_type='fov_image_based',
@@ -182,7 +182,7 @@ val_dataloader = dict(
 
 val_evaluator = dict(
     type='KittiMetric',
-    ann_file=data_root + 'new/kitti_infos_val.pkl',
+    ann_file=data_root + 'kitti_infos_val.pkl',
     metric=['3d', 'bev'],
     pred_box_type_3d='Camera')
 
@@ -198,7 +198,7 @@ test_dataloader = dict(
         data_root=data_root,
         load_eval_anns=False,
         data_prefix=dict(img='testing/image_2'),
-        ann_file='new/kitti_infos_test.pkl',
+        ann_file='kitti_infos_test.pkl',
         pipeline=[],
         modality=input_modality,
         load_type='fov_image_based',
@@ -207,7 +207,7 @@ test_dataloader = dict(
         box_type_3d='Camera'))
 test_evaluator = dict(
     type='KittiMetric',
-    ann_file=data_root + 'new/kitti_infos_test.pkl',
+    ann_file=data_root + 'kitti_infos_test.pkl',
     metric=['3d', 'bev'],
     format_only=True,
     submission_prefix=work_dir + 'result/',
