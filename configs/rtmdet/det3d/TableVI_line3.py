@@ -110,7 +110,7 @@ train_dataloader = dict(
         datasets=[
             dict(type=_base_.dataset_type,
                  data_root=_base_.data_root,
-                 ann_file='new/kitti_infos_trainval.pkl',
+                 ann_file='kitti_infos_trainval.pkl',
                  data_prefix=dict(img='training/image_2'),
                  pipeline=train_pipeline,
                  modality=_base_.input_modality,
@@ -121,7 +121,7 @@ train_dataloader = dict(
                  box_type_3d='Camera'),
             dict(type=_base_.dataset_type,
                  data_root=_base_.data_root,
-                 ann_file='new/kitti_infos_trainval.pkl',
+                 ann_file='kitti_infos_trainval.pkl',
                  data_prefix=dict(img='training/image_3'),
                  pipeline=train_pipeline,
                  modality=_base_.input_modality,
