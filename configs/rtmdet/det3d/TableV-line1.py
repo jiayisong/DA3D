@@ -1,14 +1,10 @@
-# _base_ = './rtmdet-3d_base.py'
-_base_ = './rtmdet-3d_base_newloss.py'
+_base_ = './rtmdet-3d_base.py'
+
 
 checkpoint = './model_weight/cspnext-s_imagenet_600e_channel-4.pth'
 
-# ========================modified parameters======================
-# work_dir = '/usr/jys/mmyolo/work_dirs/TableVI_2_14.16/'
-work_dir = '/usr/jys/mmyolo/work_dirs/TableVI_4_17.04/'
+work_dir = './work_dirs/TableV_1/'
 
-
-# =======================Unmodified in most cases==================
 
 relative_depth = True
 cylinder = True
