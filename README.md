@@ -87,7 +87,11 @@ CUDA_VISIBLE_DEVICES=0 python tools/train.py configs/rtmdet/TabelV_line1.py
 CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 ./tools/dist_train.sh configs/rtmdet/TabelV_line1.py 4
 ```
 ## Model Testing
-未完待续
+Similar to mmyolo, test with the following command. 
+```shell
+CUDA_VISIBLE_DEVICES=0 python tools/test.py configs/rtmdet/TabelV_line1.py work_dirs/TabelV_line1/epoch_125.pth
+```
+When the test is complete, a number of txt files of the results are generated in *work_dir/result*. Then compressed into a zip it can be uploaded to the official [kitti server](https://www.cvlibs.net/datasets/kitti/user_submit.php).
 ## Citation
 
 If you find this project useful in your research, please consider citing:
