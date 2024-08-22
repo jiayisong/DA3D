@@ -96,7 +96,7 @@ CUDA_VISIBLE_DEVICES=0 python tools/test.py configs/rtmdet/TabelV_line1.py work_
 When the test is complete, a number of txt files of the results are generated in *work_dir/result*. Then compressed into a zip it can be uploaded to the official [kitti server](https://www.cvlibs.net/datasets/kitti/user_submit.php).
 
 ## Running Result
-The model I trained is given here. The following table is the same as Table V in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV.
+The model I trained is given here. The following table is the same as Table V in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV on the validation set. 
 | Network | Loss     | DA   | Easy           | Mod.           | Hard           |  Config  |  Download  |
 |---------|----------|------|----------------|----------------|----------------|------|------|
 | RTM     | SMOKE    |      | 8.57 / 11.65   | 7.89 / 10.94   | 7.00 / 9.88    | [config](configs/rtmdet/det3d/TableV_line1.py) | [model]() \| [log]() |
@@ -105,6 +105,14 @@ The model I trained is given here. The following table is the same as Table V in
 | RTM     | MonoFlex | ✓    | 21.79 / 25.95  | 17.04 / 20.86  | 14.87 / 18.23  | [config](configs/rtmdet/det3d/TableV_line4.py) | [model]() \| [log]() |
 | DLA     | MonoFlex |      | 20.90 / 26.61  | 16.29 / 20.99  | 14.46 / 18.71  | [config](configs/rtmdet/det3d/TableV_line5.py) | [model]() \| [log]() |
 | DLA     | MonoFlex | ✓    | 25.66 / 31.56  | 21.68 / 26.73  | 19.27 / 23.80  | [config](configs/rtmdet/det3d/TableV_line6.py) | [model]() \| [log]() |
+
+
+The following table is the same as Table VI in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV on the test set through the official server. 
+| Method          | Easy           | Mod.           | Hard            | Time | GPU    |  Config  |  Download  |
+|-----------------|-----------------|-----------------|-----------------|------|--------|-------|-------|
+| DA3D     | 27.76/36.83     | 20.47/26.92     | 17.89/23.41     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line1.py) | [model]() \| [log]() |
+| DA3D*   | 30.83/39.50     | 22.08/28.71     | 19.20/25.20     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line2.py) | [model]() \| [log]() |
+| DA3D** | 34.72/44.27     | 26.80/34.88     | 23.05/30.29     | 120  | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line3.py) | [model]() \| [log]() |
 ## Citation
 
 If you find this project useful in your research, please consider citing:
