@@ -4,7 +4,7 @@ _base_ = './rtmdet-3d_base_dla.py'
 checkpoint = 'http://dl.yf.io/dla/models/imagenet/dla34-ba72cf86.pth'
 
 # ========================modified parameters======================
-work_dir = '/usr/jys/mmyolo/work_dirs/TableVI_5_16.89_666666/'
+work_dir = './mmyolo/work_dirs/TableV_line5/'
 # =======================Unmodified in most cases==================
 
 relative_depth = False
