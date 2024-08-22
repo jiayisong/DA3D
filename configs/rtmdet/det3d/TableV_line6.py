@@ -105,16 +105,6 @@ test_pipeline = [
     ),
 ]
 val_pipeline = test_pipeline
-
-train_dataloader = dict(dataset=dict(pipeline=train_pipeline,
-                                     ann_file='new/kitti_infos_trainval.pkl',
-                                     ),
-                        drop_last=True
-                        )
-train_cfg = dict(
-    val_interval=5000,
-    dynamic_intervals=None,
-)
 val_dataloader = dict(dataset=dict(pipeline=val_pipeline, ))
 test_dataloader = dict(dataset=dict(pipeline=test_pipeline, ))
 custom_hooks = [
@@ -130,6 +120,3 @@ custom_hooks = [
         switch_epoch=_base_.max_epochs - _base_.num_epochs_stage2,
         switch_pipeline=train_pipeline_stage2)
 ]
-test_evaluator = dict(
-    submission_prefix=work_dir + 'result/',
-)
