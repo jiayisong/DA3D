@@ -66,6 +66,7 @@ kitti
 ├── kitti_infos_trainval.pkl
 ├── kitti_infos_val.pkl
 ```
+Modify the [configuration file](configs/rtmdet/det3d/rtmdet-3d_base.py#L22) appropriately based on the dataset location.
 ## Pre-training Model Download
 Due to the presence of the PPP module, it is necessary to change the input channel of the convolution kernel in the first layer to 4. For the simplicity of the code, we directly give the modified pre-trained model weights. They are [cspnext-s](https://drive.google.com/file/d/1Rr3jS5US2k7eqyatphlTiU1pmVV1tB14/view?usp=sharing), [dla-34](https://drive.google.com/file/d/1lPiIZ2UtqyQURDSdyEmChTEIPeRFueOs/view?usp=sharing), and [v2-99](https://drive.google.com/file/d/1Xh5YKZQ81q9aU6hFP2ZC5TdWjd5eESzo/view?usp=sharing). Note that you have to specify the location of the pre-trained model weights in the configuration file. Or put it in the following location without modifying the configuration file.
 ```
@@ -78,7 +79,7 @@ DA3D
 ├── ...
 ```
 ## Model Training
-Similar to mmyolo, train with the following command.
+Similar to mmyolo, train with the following command. The batchsize used for the method in the paper is 8. When training with multiple gpu, pay attention to adjusting the size of batchsize in the configuration file.
 ```shell
 # Single gpu
 CUDA_VISIBLE_DEVICES=0 python tools/train.py configs/rtmdet/TabelV_line1.py
