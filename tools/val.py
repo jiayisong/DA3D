@@ -16,10 +16,8 @@ from mmyolo.utils import is_metainfo_lower
 def parse_args():
     parser = argparse.ArgumentParser(
         description='MMYOLO test (and eval) a model')
-    parser.add_argument('--config', help='test config file path',
-                        default='configs/rtmdet/det3d/rtmdet-3d_s_1xb8-100e_nus.py')
-    parser.add_argument('--checkpoint', help='checkpoint file',
-                        default='/mnt/jys/mmyolo/work_dirs/small_nus_10/epoch_23.pth')
+    parser.add_argument('config', help='test config file path',)
+    parser.add_argument('checkpoint', help='checkpoint file',)
     parser.add_argument(
         '--work-dir',
         help='the directory to save the file containing evaluation metrics')
