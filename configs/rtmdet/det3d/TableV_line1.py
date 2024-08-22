@@ -1,12 +1,9 @@
-# _base_ = './rtmdet-3d_base.py'
-_base_ = './rtmdet-3d_base_newloss.py'
+_base_ = './rtmdet-3d_base.py'
 
 checkpoint = 'https://download.openmmlab.com/mmdetection/v3.0/rtmdet/cspnext_rsb_pretrain/cspnext-s_imagenet_600e.pth'
 
-# ========================modified parameters======================
-# work_dir = '/usr/jys/mmyolo/work_dirs/TableVI_1_7.80/'
-work_dir = '/usr/jys/mmyolo/work_dirs/TableVI_3_11.27/'
-# =======================Unmodified in most cases==================
+work_dir = './work_dirs/TableV_line1/'
+
 
 relative_depth = False
 cylinder = False
