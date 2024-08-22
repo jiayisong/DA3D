@@ -86,12 +86,25 @@ CUDA_VISIBLE_DEVICES=0 python tools/train.py configs/rtmdet/TabelV_line1.py
 # Multi gpu
 CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 ./tools/dist_train.sh configs/rtmdet/TabelV_line1.py 4
 ```
+
+
 ## Model Testing
 Similar to mmyolo, test with the following command. 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python tools/test.py configs/rtmdet/TabelV_line1.py work_dirs/TabelV_line1/epoch_125.pth
 ```
 When the test is complete, a number of txt files of the results are generated in *work_dir/result*. Then compressed into a zip it can be uploaded to the official [kitti server](https://www.cvlibs.net/datasets/kitti/user_submit.php).
+
+## Running Result
+The model I trained is given here. The following table is the same as Table V in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV.
+| Network | Loss     | DA   | Easy           | Mod.           | Hard           |  Config  |  Download  |
+|---------|----------|------|----------------|----------------|----------------|------|------|
+| RTM     | SMOKE    |      | 8.57 / 11.65   | 7.89 / 10.94   | 7.00 / 9.88    | [config](configs/rtmdet/det3d/TableV_line1.py) | [model]() \| [log]() |
+| RTM     | SMOKE    | ✓    | 16.40 / 21.29  | 13.32 / 17.34  | 11.36 / 15.00  | [config](configs/rtmdet/det3d/TableV_line2.py) | [model]() \| [log]() |
+| RTM     | MonoFlex |      | 14.38 / 18.90  | 11.27 / 15.07  | 9.65 / 12.98   | [config](configs/rtmdet/det3d/TableV_line3.py) | [model]() \| [log]() |
+| RTM     | MonoFlex | ✓    | 21.79 / 25.95  | 17.04 / 20.86  | 14.87 / 18.23  | [config](configs/rtmdet/det3d/TableV_line4.py) | [model]() \| [log]() |
+| DLA     | MonoFlex |      | 20.90 / 26.61  | 16.29 / 20.99  | 14.46 / 18.71  | [config](configs/rtmdet/det3d/TableV_line5.py) | [model]() \| [log]() |
+| DLA     | MonoFlex | ✓    | 25.66 / 31.56  | 21.68 / 26.73  | 19.27 / 23.80  | [config](configs/rtmdet/det3d/TableV_line6.py) | [model]() \| [log]() |
 ## Citation
 
 If you find this project useful in your research, please consider citing:
