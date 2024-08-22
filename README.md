@@ -67,8 +67,16 @@ kitti
 ├── kitti_infos_val.pkl
 ```
 ## Pre-training Model Download
-Due to the presence of the PPP module, it is necessary to change the input channel of the convolution kernel in the first layer to 4. For the simplicity of the code, we directly give the modified pre-trained model weights. They are [cspnext-s](https://drive.google.com/file/d/1Rr3jS5US2k7eqyatphlTiU1pmVV1tB14/view?usp=sharing), [dla-34](), and [v2-99]().
-
+Due to the presence of the PPP module, it is necessary to change the input channel of the convolution kernel in the first layer to 4. For the simplicity of the code, we directly give the modified pre-trained model weights. They are [cspnext-s](https://drive.google.com/file/d/1Rr3jS5US2k7eqyatphlTiU1pmVV1tB14/view?usp=sharing), [dla-34](https://drive.google.com/file/d/1lPiIZ2UtqyQURDSdyEmChTEIPeRFueOs/view?usp=sharing), and [v2-99](https://drive.google.com/file/d/1Xh5YKZQ81q9aU6hFP2ZC5TdWjd5eESzo/view?usp=sharing). Note that you have to specify the location of the pre-trained model weights in the configuration file. Or put it in the following location without modifying the configuration file.
+```
+DA3D
+├── model_weight
+│   ├── dla34-ba72cf86-base_layer_channel-4.pth
+│   ├── cspnext-s_imagenet_600e_channel-4.pth
+│   ├── depth_pretrained_v99_channel-4.pth
+├── configs
+├── ...
+```
 ## Model Training
 未完待续
 ## Model Testing
