@@ -1,14 +1,9 @@
 _base_ = './rtmdet-3d_base_v2-99.py'
 
 checkpoint = './model_weight/depth_pretrained_v99_channel-4.pth'
-# checkpoint='http://dl.yf.io/dla/models/imagenet/dla34-ba72cf86.pth'
-# ========================Frequently modified parameters======================
 
-work_dir = '/usr/jys/mmyolo/work_dirs/v2_99_trainval_rightimg3/'
-# =======================Unmodified in most cases==================
+work_dir = './mmyolo/work_dirs/TableVI_line3/'
 
-
-# find_unused_parameters = True
 relative_depth = True
 cylinder = True
 if cylinder:
