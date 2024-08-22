@@ -3,7 +3,7 @@ _base_ = './rtmdet-3d_base.py'
 
 checkpoint = './model_weight/cspnext-s_imagenet_600e_channel-4.pth'
 
-work_dir = './work_dirs/TableV_1/'
+work_dir = './work_dirs/TableV_line2/'
 
 
 relative_depth = True
