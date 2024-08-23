@@ -99,7 +99,7 @@ When the test is complete, a number of txt files of the results are generated in
 The model I trained is given here. The following table is the same as Table V in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV on the validation set. 
 | Network | Loss     | DA   | Easy           | Mod.           | Hard           |  Config  |  Download  |
 |---------|----------|------|----------------|----------------|----------------|------|------|
-| RTM     | SMOKE    |      | 8.57 / 11.65   | 7.89 / 10.94   | 7.00 / 9.88    | [config](configs/rtmdet/det3d/TableV_line1.py) | [model]() \| [log]() |
+| RTM     | SMOKE    |      | 8.57 / 11.65   | 7.89 / 10.94   | 7.00 / 9.88    | [config](configs/rtmdet/det3d/TableV_line1.py) | [model](https://drive.google.com/file/d/1zZXUzEj7t7tkEf1Lb8t4KcSqnGwvobNq/view?usp=sharing) \| [log](https://drive.google.com/file/d/1AMwjL0HOcf850uqApsQZfIBF50_fswf2/view?usp=sharing) |
 | RTM     | SMOKE    | ✓    | 16.40 / 21.29  | 13.32 / 17.34  | 11.36 / 15.00  | [config](configs/rtmdet/det3d/TableV_line2.py) | [model]() \| [log]() |
 | RTM     | MonoFlex |      | 14.38 / 18.90  | 11.27 / 15.07  | 9.65 / 12.98   | [config](configs/rtmdet/det3d/TableV_line3.py) | [model]() \| [log]() |
 | RTM     | MonoFlex | ✓    | 21.79 / 25.95  | 17.04 / 20.86  | 14.87 / 18.23  | [config](configs/rtmdet/det3d/TableV_line4.py) | [model]() \| [log]() |
