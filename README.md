@@ -110,8 +110,8 @@ The model I trained is given here. The following table is the same as Table V in
 The following table is the same as Table VI in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV on the test set through the official server. 
 | Method          | Easy           | Mod.           | Hard            | Time | GPU    |  Config  |  Download  |
 |-----------------|-----------------|-----------------|-----------------|------|--------|-------|-------|
-| DA3D     | 27.76/36.83     | 20.47/26.92     | 17.89/23.41     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line1.py) | [model]() \| [log]() |
-| DA3D*   | 30.83/39.50     | 22.08/28.71     | 19.20/25.20     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line2.py) | [model]() \| [log]() |
+| DA3D     | 27.76/36.83     | 20.47/26.92     | 17.89/23.41     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line1.py) | [model](https://drive.google.com/file/d/1v47K4eqawVk5ApKorW8Sh-mAvoeTqGNO/view?usp=sharing) \| [log](https://drive.google.com/file/d/1f0dXW_Vx4a02ZkyG8pcsQ5UyiIVf9yl9/view?usp=sharing) |
+| DA3D*   | 30.83/39.50     | 22.08/28.71     | 19.20/25.20     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line2.py) | [model](https://drive.google.com/file/d/18gcDJVZV8c_wcHSxwHdhTEsXUVcKqBZu/view?usp=sharing) \| [log](https://drive.google.com/file/d/1qpd-js6ekqaQ0G-rABWubhEs-L7t9lwy/view?usp=sharing) |
 | DA3D** | 34.72/44.27     | 26.80/34.88     | 23.05/30.29     | 120  | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line3.py) | [model]() \| [log]() |
 ## Citation
 
