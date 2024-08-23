@@ -112,7 +112,7 @@ The following table is the same as Table VI in the paper and the evaluation metr
 |-----------------|-----------------|-----------------|-----------------|------|--------|-------|-------|
 | DA3D     | 27.76/36.83     | 20.47/26.92     | 17.89/23.41     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line1.py) | [model](https://drive.google.com/file/d/1v47K4eqawVk5ApKorW8Sh-mAvoeTqGNO/view?usp=sharing) \| [log](https://drive.google.com/file/d/1f0dXW_Vx4a02ZkyG8pcsQ5UyiIVf9yl9/view?usp=sharing) |
 | DA3D*   | 30.83/39.50     | 22.08/28.71     | 19.20/25.20     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line2.py) | [model](https://drive.google.com/file/d/18gcDJVZV8c_wcHSxwHdhTEsXUVcKqBZu/view?usp=sharing) \| [log](https://drive.google.com/file/d/1qpd-js6ekqaQ0G-rABWubhEs-L7t9lwy/view?usp=sharing) |
-| DA3D** | 34.72/44.27     | 26.80/34.88     | 23.05/30.29     | 120  | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line3.py) | [model]() \| [log]() |
+| DA3D** | 34.72/44.27     | 26.80/34.88     | 23.05/30.29     | 120  | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line3.py) | [model](https://drive.google.com/file/d/1MkBDlu3b594qCx7reCIYhbUqPFQXo2Io/view?usp=sharing) \| [log](https://drive.google.com/file/d/11uqmAgab7ura22Wjbizkch8QG7ZGgktx/view?usp=sharing) |
 ## Citation
 
 If you find this project useful in your research, please consider citing:
