@@ -22,7 +22,7 @@ mim install "mmengine==0.7.0"
 mim install "mmcv==2.0.0rc4"
 mim install "mmdet==3.0.0rc6"
 mim install "mmdet3d==1.1.0rc3"
-git clone https://github.com/jiasyiong/DA3D.git
+git clone https://github.com/jiayisong/DA3D.git
 cd DA3D
 # Install albumentations
 mim install -r requirements/albu.txt
