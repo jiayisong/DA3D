@@ -14,4 +14,4 @@ psutil
 pytest
 ubelt
 xdoctest>=0.10.0
-yapf
+yapf==0.32.0
