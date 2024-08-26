@@ -82,9 +82,9 @@ DA3D
 Similar to mmyolo, train with the following command. The batchsize used for the method in the paper is 8. When training with multiple gpu, pay attention to adjusting the size of batchsize in the configuration file.
 ```shell
 # Single gpu
-CUDA_VISIBLE_DEVICES=0 python tools/train.py configs/rtmdet/det3d/TabelV_line1.py
+CUDA_VISIBLE_DEVICES=0 python tools/train.py configs/rtmdet/det3d/TableV_line1.py
 # Multi gpu
-CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 ./tools/dist_train.sh configs/rtmdet/det3d/TabelV_line1.py 4
+CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 ./tools/dist_train.sh configs/rtmdet/det3d/TableV_line1.py 4
 ```
 
 
