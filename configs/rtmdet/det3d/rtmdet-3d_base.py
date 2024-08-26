@@ -1,6 +1,6 @@
 _base_ = '../../_base_/default_runtime.py'
 
-
+work_dir = './work_dirs/base/'
 
 
 class_names = ['Pedestrian', 'Cyclist', 'Car']
