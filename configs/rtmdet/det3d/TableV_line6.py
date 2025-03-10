@@ -1,4 +1,4 @@
-_base_ = './rtmdet-3d_base_dla.py'
+_base_ = './rtmdet-3d_base_newloss_dla.py'
 
 checkpoint = './model_weight/dla34-ba72cf86-base_layer_channel-4.pth'
 
