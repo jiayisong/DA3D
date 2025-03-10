@@ -24,8 +24,7 @@ mim install "mmdet==3.0.0rc6"
 mim install "mmdet3d==1.1.0rc3"
 git clone https://github.com/jiayisong/DA3D.git
 cd DA3D
-# Install albumentations
-mim install -r requirements/albu.txt
+mim install -r requirements.txt
 # Install MMYOLO
 mim install -v -e .
 # "-v" 指详细说明，或更多的输出
