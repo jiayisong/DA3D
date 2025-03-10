@@ -105,6 +105,7 @@ test_pipeline = [
     ),
 ]
 val_pipeline = test_pipeline
+train_dataloader = dict(dataset=dict(pipeline=train_pipeline, ))
 val_dataloader = dict(dataset=dict(pipeline=val_pipeline, ))
 test_dataloader = dict(dataset=dict(pipeline=test_pipeline, ))
 custom_hooks = [
