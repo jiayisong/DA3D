@@ -96,6 +96,7 @@ When the test is complete, a number of txt files of the results are generated in
 
 ## Running Result
 The model I trained is given here. The following table is the same as Table V in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV on the validation set. 
+
 | Network | Loss     | DA   | Easy           | Mod.           | Hard           |  Config  |  Download  |
 |---------|----------|------|----------------|----------------|----------------|------|------|
 | RTM     | SMOKE    |      | 8.57 / 11.65   | 7.89 / 10.94   | 7.00 / 9.88    | [config](configs/rtmdet/det3d/TableV_line1.py) | [model](https://drive.google.com/file/d/1zZXUzEj7t7tkEf1Lb8t4KcSqnGwvobNq/view?usp=sharing) \| [log](https://drive.google.com/file/d/1AMwjL0HOcf850uqApsQZfIBF50_fswf2/view?usp=sharing) |
@@ -107,6 +108,7 @@ The model I trained is given here. The following table is the same as Table V in
 
 
 The following table is the same as Table VI in the paper and the evaluation metrics are IOU=0.7, R40, AP_3D/AP_BEV on the test set through the official server. 
+
 | Method          | Easy           | Mod.           | Hard            | Time | GPU    |  Config  |  Download  |
 |-----------------|-----------------|-----------------|-----------------|------|--------|-------|-------|
 | DA3D     | 27.76/36.83     | 20.47/26.92     | 17.89/23.41     | 22   | 2080Ti | [config](configs/rtmdet/det3d/TableVI_line1.py) | [model](https://drive.google.com/file/d/1v47K4eqawVk5ApKorW8Sh-mAvoeTqGNO/view?usp=sharing) \| [log](https://drive.google.com/file/d/1f0dXW_Vx4a02ZkyG8pcsQ5UyiIVf9yl9/view?usp=sharing) |
