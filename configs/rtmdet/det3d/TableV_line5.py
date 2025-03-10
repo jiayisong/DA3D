@@ -1,4 +1,4 @@
-_base_ = './rtmdet-3d_base_dla.py'
+_base_ = './rtmdet-3d_base_newloss_dla.py'
 
 
 checkpoint = 'http://dl.yf.io/dla/models/imagenet/dla34-ba72cf86.pth'
