@@ -1,1 +1,2 @@
 albumentations --no-binary qudida,albumentations
+yapf==0.32.0
