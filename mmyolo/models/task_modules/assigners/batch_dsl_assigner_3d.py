@@ -12,7 +12,7 @@ from mmyolo.registry import TASK_UTILS
 from cv_ops.bbox3d import boxes_iou_3d_gpu
 from mmengine.logging import MessageHub
 
-INF = 100000000
+INF = 100000000.0
 EPS = 1.0e-7
 
 
